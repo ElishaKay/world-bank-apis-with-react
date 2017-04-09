@@ -1,0 +1,52 @@
+{
+  "name": "public-data-compiler",
+  "version": "0.0.1",
+  "description": "a public data compiler",
+  "engines": {
+    "node": "0.12.7",
+    "npm": "2.11.3"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "karma start",
+    "dev": "webpack-dev-server --content-base public/ --progress --colors",
+    "start": "NODE_ENV=production node server.js",
+    "postinstall": "webpack -p --config webpack.prod.config.js --profile --progress --colors"
+  },
+  "devDependencies": {
+    "karma": "*",
+    "karma-chai-plugins": "*",
+    "karma-chrome-launcher": "*",
+    "karma-cli": "*",
+    "karma-mocha": "*",
+    "karma-sourcemap-loader": "*",
+    "karma-webpack": "*",
+    "mocha": "*",
+    "webpack-dev-server": "*"
+  },
+  "dependencies": {
+    "async": "*",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "c3-react": "*",
+    "classnames": "*",
+    "css-list": "*",
+    "css-loader": "*",
+    "csvtojson": "*",
+    "express": "*",
+    "file-loader": "*",
+    "json-loader": "*",
+    "jsx-loader": "*",
+    "minimatch": "*",
+    "node-gyp": "*",
+    "pug": "*",
+    "react": "*",
+    "react-addons": "*",
+    "react-google-charts": "*",
+    "style-loader": "*",
+    "to-iso-string": "*",
+    "webpack": "*"
+  },
+  "author": "Lovisa Svallingson",
+  "license": "ISC"
+}
